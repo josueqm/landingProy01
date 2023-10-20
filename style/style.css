@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+    --bg_main: #F7F7F7;
+    --bg_head: #629F91;
+    --fontTitle: 'Pixelify Sans', sans-serif;
+    --fontText: 'Poppins', sans-serif;
+    --colorHead: #1E3932;
+    --colorHead2: #CEDFDF;
+    --colorHead3: #B1CFC8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /* width: 1600px; */
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+
+.navbar a {
+    color: var(--colorHead3);
+    font-family: var(--fontText);
+    font-size: 20px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 88px;
+}
+
+header.main {
+    width: 100%;
+    height: 100vh;
+    background: var(--bg_head);
+}
+
+.textHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h2#textIndu {
+    font-family: var(--fontText);
+    font-weight: bold;
+    font-size: 160px;
+    color: var(--colorHead);
+}
+h1#textMain {
+    font-family: var(--fontTitle);
+    font-weight: 500;
+    font-size: 7.5rem; /*250px*/
+    color: var(--colorHead2);
+    position: absolute;
+    
+}
+h3#textSub {
+    position: relative;
+    top: -2.5rem;
+    color: var(--colorHead2);
+}
+
+section {
+    height: 100vh;
+}
+
+section#about {
+    background: blue;
+}
+section#roadmap {
+    background: red;
+}
