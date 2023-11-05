@@ -18,6 +18,7 @@
     box-sizing: border-box;
 }
 
+
 li {
     list-style: none;
 }
@@ -34,8 +35,35 @@ a {
     justify-content: space-between;
     padding-top: 1.5rem;
     align-items: center;
+    transition: background-color 0.1s ease; /* Transición de color */
+    z-index: 1000; /* Asegura que el menú esté en el frente */
+    position: fixed;
+    width: 100%;
+    height: 15%;
+}
+
+
+
+.navbar.shrink .menu ul li a {
+    /* Estilos para los enlaces del menú al hacer scroll */
+    /* Ajusta el tamaño de fuente y otros estilos según lo necesites */
+    font-size: 15px;
+    align-items: center;
     
 }
+
+.navbar.shrink #imagen_logo {
+  width: 150px;
+  height: 80px;
+    
+}
+
+.navbar.shrink #boton {
+font-size: 15px;  
+}
+
+
+
 
 .navbar a {
     color: var(--colorHead3);
@@ -62,14 +90,20 @@ header.main {
     width: 100%;
     height: 100vh;
     background: var(--bg_head);
+    background-image: url('../img/background-header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 
 .textHeader {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 70%;
+
 }
 
 h2#textIndu {
@@ -91,6 +125,12 @@ h3#textSub {
     top: -2.5rem;
     color: var(--colorHead2);
 }
+
+
+
+
+
+
 
 .section {
     height: 100vh;

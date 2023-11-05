@@ -14,15 +14,16 @@
     <link rel="stylesheet" href="style/style.css">
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/f1d3ec1e99.js" crossorigin="anonymous"></script>
+    <script src="./js/events.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <div class="">
         <header class="main">
-            <nav class="navbar">
+            <nav class="navbar" id="navbar">
                 <!-- logo -->
-                <div><img src="/img/laia_logo.png" alt="Logo"></div>
+                <div><img src="/img/laia_logo.png" alt="Logo" id="imagen_logo"></div>
                 <!-- menu -->
                 <div class="menu">
                     <ul>
@@ -41,16 +42,20 @@
                     </ul>
                 </div>
                 <!-- btn log in -->
-                <div><button type="button" class="btn btn-outline"><i class="fa-solid fa-user"></i></button></div>
+                <div><button type="button" class="btn btn-outline" id="boton"><i class="fa-solid fa-user"></i></button></div>
             </nav>
 
-
+            
             <div class="textHeader">
                 <h2 id="textIndu">रो श न</h2>
                 <h1 id="textMain">LAIA</h1>
                 <h3 id="textSub">ens il·lumines?</h3>
             </div>
+
+            
+
         </header>
+        
         <section class="section" id="about">
             <h2>Who is Laia?</h2>
         </section>
