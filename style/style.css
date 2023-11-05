@@ -28,7 +28,7 @@ a {
 }
 
 
-
+ /* Al hacer scroll */
 .navbar {
     display: flex;
     flex-direction: row;
@@ -59,9 +59,9 @@ a {
 }
 
 .navbar.shrink #boton {
-font-size: 15px;  
+font-size: 17px;  
 }
-
+ /* --------------------*/
 
 
 
@@ -80,10 +80,11 @@ font-size: 15px;
 .btn.btn-outline{
    margin: 0px 10px 10px 0px;
    font-size: 20px;
+   color: #CEDFDF;
+   
 }
 .btn.btn-outline:hover{
-    background-color: #1E3932;
-    color: #CEDFDF;
+    background-color: #182e28;
 }
 
 header.main {
