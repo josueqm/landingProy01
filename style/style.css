@@ -80,7 +80,7 @@ font-size: 17px;
 .btn.btn-outline{
    margin: 0px 10px 10px 0px;
    font-size: 20px;
-   color: #CEDFDF;
+   color: var(--colorHead2);
    
 }
 .btn.btn-outline:hover{
@@ -158,7 +158,7 @@ section#team {
 }
 .titulo_team p{
     font-size:80px;
-    color: #629F91;
+    color: var(--bg_head);
     font-family: 'Pixelify Sans', sans-serif;
     padding: 40px 0px 0px 0px;
 }
@@ -171,7 +171,7 @@ section#team {
 
 .info_team{
    margin: 40px 0px 50px 0px;
-   color: #F7F7F7;
+   color: var(--bg_main);
    
 }
 .info_team h3{
@@ -180,8 +180,9 @@ section#team {
  }
 
 .info_team img{
-    width:280px;
-    height:280px;
+    width:260px;
+    height:260px;
+    background-color: var(--colorHead2);
     border-radius:150px;
     border:10px solid #629F91;
     
@@ -189,7 +190,7 @@ section#team {
 
 /* FOOTER */
 #footer{
-    background-color: #F7F7F7;
+    background-color: var( --bg_main);
     width: auto;
     font-family: 'Poppins', sans-serif;
 }
@@ -208,7 +209,7 @@ font-size: 20px;
 }
 
 .menu_footer a:hover{
-color:  #629F91;
+color: var( --bg_head);
 transform: scale(1.1);
 }
 
@@ -221,7 +222,7 @@ transform: scale(1.1);
 .redes i:hover{
     transform: scale(1.1);
     cursor:pointer;
-    color:  #629F91;
+    color: var( --bg_head);
   }
 
 #logo{
