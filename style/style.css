@@ -402,7 +402,7 @@ section#team {
 .titulo_team p{
     font-size:80px;
     color: var(--bg_head);
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: var(--fontTitle);
     padding: 40px 0px 0px 0px;
 }
 
