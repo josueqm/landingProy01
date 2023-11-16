@@ -443,7 +443,7 @@ section#team {
 }
 
 .menu_footer {
-    margin: 100px 10px 0px 0px;
+    margin: 100px 50px 0px 0px;
 }
 
 .menu_footer a{
@@ -456,7 +456,9 @@ color: var( --bg_head);
 transform: scale(1.1);
 }
 
-
+.redes {
+    margin: 0px 0px 0px 50px;
+}
 .redes i{
     justify-content: left;
     font-size:45px;
@@ -469,7 +471,8 @@ transform: scale(1.1);
   }
 
 #logo{
-padding: 80px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
+    margin: 0px 0px 20px 70px;
 }
 
 #copyright {
@@ -486,12 +489,17 @@ padding: 80px 0px 0px 0px;
         text-align: center;
     }
 
+    #logo{
+        padding: 80px 0px 0px 0px;
+        margin: 0px;
+    }
     .redes {
-        margin: 20px 25px 0px 0px; /* Espacio entre redes y logo */
+        margin: 20px 20px 20px 0px; /* Espacio entre redes y logo */
         justify-content: center;
         display: flex;
         gap: 20px; 
     }
+
 
     .redes i{
         font-size: 35px;
@@ -499,10 +507,11 @@ padding: 80px 0px 0px 0px;
 
     .menu_footer{
         margin-top: 50px;
+         justify-content: center;
+         margin: 20px 0px 0px 0px; /* Espacio entre redes y logo */
     }
 
     .menu_footer a{
-        color: #000000;
         font-size: 15px;
         }
         
