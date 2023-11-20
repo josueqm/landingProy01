@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 
 :root {
     --bg_main: #F7F7F7;
@@ -8,6 +8,7 @@
     --bg_head: #629F91;
     --fontTitle: 'Pixelify Sans', sans-serif;
     --fontText: 'Poppins', sans-serif;
+    --fontTitleH: 'Rammetto One', sans-serif;
     --colorHead: #1E3932;
     --colorHead2: #CEDFDF;
     --colorHead3: #B1CFC8;
@@ -29,6 +30,7 @@ html {
 body {
     font-family: var(--fontText);
     height: 100%;
+    background: var(--bg_main_2);
 }
 
 li {
@@ -41,7 +43,7 @@ a {
 
 /* Estilos para titulos */
 .title {
-    font-family: var(--fontTitle);
+    font-family: var(--fontTitleH);
     font-weight: bold;
     font-size: 4.5rem;
     color: var(--color-section-1);
@@ -147,7 +149,7 @@ h2#textIndu {
     color: var(--colorHead);
 }
 h1#textMain {
-    font-family: var(--fontTitle);
+    font-family: var(--fontTitleH);
     font-weight: 500;
     font-size: 7.5rem; /*250px*/
     color: var(--colorHead2);
@@ -156,6 +158,23 @@ h1#textMain {
     /* efecto neon */
     text-shadow: 0 0 5px #F79232, 0 0 15px #F79232, 0 0 30px #F79232, 0 0 50px #F79232;
 }
+
+.flicker1 {
+    animation: parpadear 2s infinite backwards steps(3);
+}
+
+.flicker2 {
+    animation: parpadear 1.5s infinite backwards steps(2);
+}
+
+@keyframes parpadear {
+    to {
+        color: gray;
+        color: #FFCD1B;
+        text-shadow: none;
+    }
+}
+
 h3#textSub {
     color: var(--color-section-1);
 }
@@ -178,27 +197,28 @@ h3#textSub {
 }
 
 /* DIVIDER */
-
-.custom-shape-divider-top-1699619292 {
-    position: relative; /*absolute*/
-    top: 0;
+.divider-bottom {
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1699619292 svg {
+.divider-bottom svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 50px;
 }
 
-.custom-shape-divider-top-1699619292 .shape-fill {
-    fill: #8DB0A8;
+.divider-bottom .shape-fill {
+    fill: var(--bg_main_2);
 }
 
+/* ------- */
 
 section#about {
     height: 100vh;
@@ -412,10 +432,9 @@ section#team {
     justify-content: center;
 }
 
-.info_team{
-   margin: 40px 0px 50px 0px;
-   color: var(--bg_main);
-   
+.info_team {
+    margin: 40px 0px 50px 0px;
+    color: var(--bg_main);
 }
 .info_team h3{
     margin-top:  10px;
