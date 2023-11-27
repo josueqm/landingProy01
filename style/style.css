@@ -592,16 +592,9 @@ h3#textSub {
     min-height:auto;
     height: auto;
 }
-.titulo_team{
+
+.team h2 {
     text-align: center;
-    justify-content: center;
-    display: flex;
-}
-.titulo_team p{
-    font-size:80px;
-    color: var(--bg_head);
-    font-family: var(--fontTitle);
-    padding: 40px 0px 0px 0px;
 }
 
 .equipo{
@@ -611,29 +604,28 @@ h3#textSub {
 }
 
 .info_team{
-   margin: 40px 0px 50px 0px;
-   color: var(--bg_main);
-   
+    margin: 40px 0px 50px 0px;
+    color: var(--bg_main);
 }
 .info_team h3{
+    font-size: 3rem;
+    color: var(--second-bg-color);
     margin-top:  10px;
-    font-family: 'Poppins', sans-serif; 
- }
+}
 
 .info_team img{
     width:260px;
     height:260px;
-    background-color: var(--colorHead2);
+    background-color: var(--second-bg-color);
     border-radius:150px;
-    border:10px solid #629F91;
+    border:10px solid var(--bg-btn);
     
- }
+}
 
 /* FOOTER */
 #footer{
-    background-color: var( --bg_main);
     width: auto;
-    font-family: 'Poppins', sans-serif;
+    padding: 0 9% 2rem;
 }
 .ftr {
     display: flex;
@@ -644,17 +636,18 @@ h3#textSub {
     margin: 100px 50px 0px 0px;
 }
 
-.menu_footer a{
-color: #000000;
-font-size: 20px;
+.menu_footer a {
+    color: var(--second-bg-color);
+    font-size: 20px;
 }
 
 .menu_footer a:hover{
-color: var( --bg_head);
+color: var(--bg-btn);
 transform: scale(1.1);
 }
 
 .redes {
+    color: var(--bg-btn);
     margin: 0px 0px 0px 50px;
 }
 .redes i{
@@ -665,8 +658,8 @@ transform: scale(1.1);
 .redes i:hover{
     transform: scale(1.1);
     cursor:pointer;
-    color: var( --bg_head);
-  }
+    color: var(--second-bg-color);
+}
 
 #logo{
     padding: 100px 0px 0px 0px;
@@ -676,6 +669,12 @@ transform: scale(1.1);
 #copyright {
     display: flex;
     justify-content: center;
+}
+
+#copyright h6 {
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    font-weight: 300;
 }
 
 
@@ -705,13 +704,13 @@ transform: scale(1.1);
 
     .menu_footer{
         margin-top: 50px;
-         justify-content: center;
-         margin: 20px 0px 0px 0px; /* Espacio entre redes y logo */
+        justify-content: center;
+        margin: 20px 0px 0px 0px; /* Espacio entre redes y logo */
     }
 
-    .menu_footer a{
+    .menu_footer a {
         font-size: 15px;
-        }
+    }
         
 
         
@@ -728,8 +727,7 @@ transform: scale(1.1);
     .info_team img{
         width:200px;
         height:200px;
-        
-     }
+    }
 
     
 }
