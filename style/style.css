@@ -424,20 +424,19 @@ h3#textSub {
 }
 
 .stages-container .row:first-child .card-stage:first-child {
-    background-image: url('https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-image: url('../media/spain-3d.png');
+    background-image: url('../media/maps/spain-3d.png');
 }
 
 .stages-container .row:first-child .card-stage:nth-child(2) {
-    background-image: url('../media/brazil-3d.png');
+    background-image: url('../media/maps/brazil-3d.png');
 }
 
 .stages-container .row:nth-child(2) .card-stage:first-child {
-    background-image: url('../media/india-3d.png');
+    background-image: url('../media/maps/india-3d.png');
 }
 
 .stages-container .row:nth-child(2) .card-stage:nth-child(2) {
-    background-image: url('../media/kenia-3d.png');
+    background-image: url('../media/maps/kenia-3d.png');
 }
 
 .card-stage:hover > .stage-description {
